@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   socialLinks: Social[];
+  copyStart: number;
+  copyText: string;
   constructor() { }
 
   ngOnInit() {
+    this.copyStart = 2017;
     this.socialLinks = [
       {
         name: 'Twitter',
@@ -43,6 +46,16 @@ export class FooterComponent implements OnInit {
         faclass: 'envelope'
       }
     ];
+    this.copyText = this.copyYear();
+  }
+  copyYear(): string {
+    let copyText: string = String(this.copyStart);
+    const today = new Date();
+    const currentYear: number = today.getFullYear();
+    if (currentYear > this.copyStart) {
+      copyText += '-' + String(currentYear);
+    }
+    return copyText;
   }
 
 }
