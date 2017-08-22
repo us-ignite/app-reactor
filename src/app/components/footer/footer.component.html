@@ -1,0 +1,14 @@
+<!-- Begin Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li *ngFor="let s of socialLinks">
+      <a target="_blank" href="{{ s.url }}" class="icon fa-{{ s.faclass }}">
+        <span class="label">{{ s.name }}</span></a>
+    </li>
+  </ul>
+  <ul class="copyright">
+    <li>&copy; 2017 US Ignite</li>
+    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+  </ul>
+</footer>
+<!-- End Footer -->

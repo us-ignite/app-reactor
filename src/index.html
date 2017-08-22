@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AppReactor</title>
-  <base href="/">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>US Ignite Gig Reactor</title>
+    <meta name="description" content="Tools and information to inspire ideas for gigabit applications in smart communities.">
+    <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <body class="landing">
+    <div id="page-wrapper">
+      <app-root></app-root>
+    </div>
+  </body>
 </html>
