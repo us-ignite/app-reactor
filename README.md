@@ -1,5 +1,15 @@
 # AppReactor
 
+This is a prototype page for the online version of the US Ignite Application Generator.  It's a port of the project in the AppReactor repository, which I expect to delete once the port is done.
+
+Visit us at [us-ignite.org](https://us-ignite.org)
+
+## Credits
+
+* Theme based on [Spectral theme by HTML5 UP](https://html5up.net/) originally provided for the Jekyll Framework.
+
+## Angular
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 
 ## Development server
