@@ -1,9 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'assets/css/_sass/libs/_functions';
-@import 'assets/css/_sass/libs/_mixins';
-@import 'assets/css/_sass/libs/_skel';
-@import 'assets/css/_sass/libs/_vars';
-@import 'assets/css/_sass/libs/_main';
+@import '_sass/variables';
+@import '_sass/libs/_main';
+@import '../node_modules/font-awesome/scss/font-awesome';
 
 .dropdown {
   position: relative;
