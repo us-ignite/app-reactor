@@ -18,7 +18,7 @@ export class DataService {
     this.data = [
       { // One
         problem: 'Two or more people in different places need to simultaneously and collaboratively',
-        image: '/assets/images/BP2_2887.jpg',
+        image: 'assets/images/BP2_2887.jpg',
         img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
         ideas: [
           {
@@ -114,7 +114,7 @@ export class DataService {
       },
       { // two
         problem: 'Expand the capabilities of low-end devices by using off-site resources over high speed networks and edge-compute to connect',
-        image: '/assets/images/IoTArray.jpg',
+        image: 'assets/images/IoTArray.jpg',
         img_alt_text: 'A controller manages an array of sensors',
         ideas: [
           {
@@ -161,7 +161,7 @@ export class DataService {
       },
       { // three
         problem: 'Use big-data from hubs, archives or field devices for better decision making or education by',
-        image: '/assets/images/BP2_3761.jpg',
+        image: 'assets/images/BP2_3761.jpg',
         img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
         ideas: [
           {
@@ -214,7 +214,7 @@ export class DataService {
       },
       { // four
         problem: 'Provide unprecedented levels of detail through the use of streaming 4k Video to',
-        image: '/assets/images/BP2_3741.jpg',
+        image: 'assets/images/BP2_3741.jpg',
         img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
         ideas: [
           {
@@ -246,7 +246,7 @@ export class DataService {
       },
       { // five
         problem: 'Enable real-time interactive control of',
-        image: '/assets/images/BP1_0943.jpg',
+        image: 'assets/images/BP1_0943.jpg',
         img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
         ideas: [
           {
@@ -273,7 +273,7 @@ export class DataService {
       },
       { // six
         problem: 'Enable unprecedented levels of security or enable direct interaction by',
-        image: '/assets/images/BP1_0723.jpg',
+        image: 'assets/images/BP1_0723.jpg',
         img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
         ideas: [
           {
