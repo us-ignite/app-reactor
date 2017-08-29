@@ -23,6 +23,8 @@
 }
 .size>ul.list li:last-child { border:none }
 
+.size>ul.list li>a {text-underline: none}
+
 .half-column {
   position: relative;
   width: 50%;
@@ -34,4 +36,3 @@
   align-content: left;
   text-align: left;
 }
-

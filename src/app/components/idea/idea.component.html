@@ -1,19 +1,20 @@
-<section class="spotlight">
+<section class="spotlight" [ngClass]="{'wrapper alt style1': odd}">
   <div class="image">
-    <img src="{{ scenario.image }}" alt="{{ scenario.img_alt_text }}"/></div>
+    <img src="{{ scenario.image }}" alt="{{ scenario.img_alt_text }}">
+  </div>
   <div class="content">
     <p>{{ scenario.problem }}
       {{ solution }}<span [hidden]="!solution">.</span>
       <span [hidden]="solution">...</span>
     </p>
-    <input type="text" placeholder="Type your idea or select one below"
+    <input type="text" placeholder="Type your idea or click on ideas below"
            [(ngModel)]="solution" (input)="resetExample()">
     <div class="row">
-        <div class="half-column alig-left">
+        <div class="half-column align-left">
           <a (click)="toggleShowIdeas()" class="icon"><i class="icon fa-lightbulb-o small"></i> ideas</a>
         </div>
         <div class="half-column align-right" [hidden]="!solution">
-          <a (click)="mailTo()" class="icon">email this <i class="icon fa-envelope small"></i></a>
+          <a (click)="setMailTo()" href="{{ mailTo }}" class="icon">email this <i class="icon fa-envelope small"></i></a>
         </div>
     </div>
 
@@ -27,10 +28,10 @@
       </ul>
     </div>
 
-    <div class="align-left" [hidden]="!watchChange">
+    <div class="align-left" [hidden]="!showExamples">
       <strong>Similar:</strong>
       <span *ngFor="let ex of examples; let isLast=last">
-      <a href="" target="_blank" >
+      <a href="ex.url" target="_blank" >
         {{ ex.name }}
       </a>{{isLast? '' : ', '}}</span>
     </div>
