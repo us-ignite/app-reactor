@@ -3,7 +3,7 @@
     <img src="{{ scenario.image }}" alt="{{ scenario.img_alt_text }}"/></div>
   <div class="content">
     <p>{{ scenario.problem }}
-      {{ solution }}
+      {{ solution }}<span [hidden]="!solution">.</span>
       <span [hidden]="solution">...</span>
     </p>
     <input type="text" placeholder="Type your idea or select one below" [(ngModel)]="solution">
@@ -15,9 +15,10 @@
     </div>
 
     <div class="dropdown">
+      <p>test of the dropdown menu thingie</p>
       <ul class="dropdown-menu">
         <li *ngFor="let idea of scenario.ideas">
-          <a href="#">{{ idea.text }}</a>
+          <a (click)="solution = idea.text">{{ idea.text }}</a>
           <!-- template?  send idea.examples each as link? -->
         </li>
       </ul>
