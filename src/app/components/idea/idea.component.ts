@@ -19,7 +19,7 @@ export class IdeaComponent implements OnInit {
 
   ngOnInit() {
     this.showIdeas = true;
-    this.watchChange = false;
+    this.showExamples = false;
     this.examples = [];
   }
 
