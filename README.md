@@ -6,7 +6,7 @@ Visit us at [us-ignite.org](https://us-ignite.org)
 
 ## Build and Publish
 
-For testing we're using github-pages and deploying via thoughts from the post by @cobyism [here](https://gist.github.com/cobyism/4730490).  To build:
+For testing we're using github-pages and deploying via thoughts from the post by @cobyism [here](https://gist.github.com/cobyism/4730490).  To build run actual build via `ng build` then commit update and push the subtree to gh-pages via:
 ```
 git subtree push --prefix dist origin gh-pages
 ```
