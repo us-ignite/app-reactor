@@ -3,6 +3,7 @@
 @import '_sass/libs/_main';
 @import '../node_modules/font-awesome/scss/font-awesome';
 
+/* Idea menu popup */
 .size { position:relative }
 .size>ul.list {
   position:absolute; left:30px; top:-40px; z-index:999;
@@ -33,3 +34,4 @@
   align-content: left;
   text-align: left;
 }
+

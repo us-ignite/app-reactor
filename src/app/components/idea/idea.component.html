@@ -10,15 +10,15 @@
            [(ngModel)]="solution" (input)="resetExample()">
     <div class="row">
         <div class="half-column alig-left">
-          <a (click)="toggleShowIdeas()"><i class="icon fa-lightbulb-o small"></i> ideas</a>
+          <a (click)="toggleShowIdeas()" class="icon"><i class="icon fa-lightbulb-o small"></i> ideas</a>
         </div>
         <div class="half-column align-right" [hidden]="!solution">
-          <a (click)="mailTo()">email this <i class="icon fa-envelope small"></i></a>
+          <a (click)="mailTo()" class="icon">email this <i class="icon fa-envelope small"></i></a>
         </div>
     </div>
 
     <!-- based on example at https://css-tricks.com/snippets/jquery/styled-popup-menu/ -->
-    <div class="size" (click)="toggleShowIdeas()" [hidden]="showIdeas">
+    <div class="size" (click)="toggleShowIdeas()" (mouseleave)="toggleShowIdeas()" [hidden]="showIdeas">
       <ul class="list">
         <li *ngFor="let idea of scenario.ideas" (click)="addSolution(idea.text, idea.examples)">
           <a>{{ idea.text }}</a>
@@ -28,10 +28,11 @@
     </div>
 
     <div class="align-left" [hidden]="!watchChange">
-      <strong>Example:</strong>
-      <a href="" target="_blank" *ngFor="let ex of examples">
+      <strong>Similar:</strong>
+      <span *ngFor="let ex of examples; let isLast=last">
+      <a href="" target="_blank" >
         {{ ex.name }}
-      </a>
+      </a>{{isLast? '' : ', '}}</span>
     </div>
   </div>
 </section>
