@@ -3,56 +3,33 @@
 @import '_sass/libs/_main';
 @import '../node_modules/font-awesome/scss/font-awesome';
 
-.dropdown {
+.size { position:relative }
+.size>ul.list {
+  position:absolute; left:30px; top:-40px; z-index:999;
+  //width:300px;
+  margin:0; padding:10px; list-style:none;
+  background:#fff; color:#333;
+  -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;
+  -moz-box-shadow:0 0 5px #999; -webkit-box-shadow:0 0 5px #999; box-shadow:0 0 5px #999
+}
+.size>ul.list li {
+  padding:10px;
+  border-bottom: solid 1px #ccc;
+  align-content: left;
+}
+.size>ul.list li:hover {
+  background: #6f80a1; color:#fff;
+}
+.size>ul.list li:last-child { border:none }
+
+.half-column {
   position: relative;
-  display: inline-block;
+  width: 50%;
 }
-
-.dropdown .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  display: none;
-  margin: 0;
-
-  /****************
-   ** NEW STYLES **
-   ****************/
-
-  list-style: none; /** Remove list bullets */
-  width: 100%; /** Set the width to 100% of it's parent */
-  padding: 0;
+.row {
+  width: 100%;
 }
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown input {
-  display: inline-block;
-  margin: 0;
-}
-
-/** Button Styles **/
-.dropdown button {
-  display: inline-block;
-  background: #FF6223;
-  color: #FFFFFF;
-  border: none;
-  margin: 0;
-  padding: 0em;
-  font-size: 1em;
-}
-
-/** List Item Styles **/
-.dropdown a {
-  display: block;
-  padding: 0.2em 0.8em;
-  text-decoration: none;
-  background: #CCCCCC;
-  color: #333333;
-}
-
-/** List Item Hover Styles **/
-.dropdown a:hover {
-  background: #BBBBBB;
+.align-left {
+  align-content: left;
+  text-align: left;
 }

@@ -6,25 +6,32 @@
       {{ solution }}<span [hidden]="!solution">.</span>
       <span [hidden]="solution">...</span>
     </p>
-    <input type="text" placeholder="Type your idea or select one below" [(ngModel)]="solution">
-    <div>
-      <a href="#"><i class="icon fa-lightbulb-o small"></i> ideas</a>
-    </div>
-    <div class="right" [hidden]="!solution">
-      <a href="#" class="right">email this <i class="icon fa-envelope small"></i></a>
+    <input type="text" placeholder="Type your idea or select one below"
+           [(ngModel)]="solution" (onChange)="resetExample()">
+    <div class="row fa-border">
+        <div class="half-column alig-left fa-border">
+          <a (click)="toggleShowIdeas()"><i class="icon fa-lightbulb-o small"></i> ideas</a>
+        </div>
+        <div class="half-column align-right" [hidden]="solution">
+          <a (click)="mailTo()">email this <i class="icon fa-envelope small"></i></a>
+        </div>
     </div>
 
-    <div class="dropdown">
-      <p>test of the dropdown menu thingie</p>
-      <ul class="dropdown-menu">
-        <li *ngFor="let idea of scenario.ideas">
-          <a (click)="solution = idea.text">{{ idea.text }}</a>
+    <!-- based on example at https://css-tricks.com/snippets/jquery/styled-popup-menu/ -->
+    <div class="size" (click)="toggleShowIdeas()" [hidden]="showIdeas">
+      <ul class="list">
+        <li *ngFor="let idea of scenario.ideas" (click)="addSolution(idea.text, idea.examples)">
+          <a>{{ idea.text }}</a>
           <!-- template?  send idea.examples each as link? -->
         </li>
       </ul>
     </div>
-    <p>
-      <strong>Example:</strong> <a href="" target="_blank"></a>
-    </p>
+
+    <div class="align-left" [hidden]="examples">
+      <strong>Example:</strong>
+      <a href="{{ example.url }}" target="_blank" *ngFor="let example of examples">
+        {{ example.name }}
+      </a>
+    </div>
   </div>
 </section>

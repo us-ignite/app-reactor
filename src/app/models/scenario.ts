@@ -5,12 +5,12 @@ export interface Scenario {
   ideas: Idea[];
 }
 
-interface Idea {
+export interface Idea {
   text: string;
   examples: Example[];
 }
 
-interface Example {
+export interface Example {
   name: string;
   url: string;
 }
