@@ -1,0 +1,29 @@
+<section class="spotlight">
+  <div class="image">
+    <img src="{{ scenario.image }}" alt="{{ scenario.img_alt_text }}"/></div>
+  <div class="content">
+    <p>{{ scenario.problem }}
+      {{ solution }}
+      <span [hidden]="solution">...</span>
+    </p>
+    <input type="text" placeholder="Type your idea or select one below" [(ngModel)]="solution">
+    <div>
+      <a href="#"><i class="icon fa-lightbulb-o small"></i> ideas</a>
+    </div>
+    <div class="right" [hidden]="!solution">
+      <a href="#" class="right">email this <i class="icon fa-envelope small"></i></a>
+    </div>
+
+    <div class="dropdown">
+      <ul class="dropdown-menu">
+        <li *ngFor="let idea of scenario.ideas">
+          <a href="#">{{ idea.text }}</a>
+          <!-- template?  send idea.examples each as link? -->
+        </li>
+      </ul>
+    </div>
+    <p>
+      <strong>Example:</strong> <a href="" target="_blank"></a>
+    </p>
+  </div>
+</section>

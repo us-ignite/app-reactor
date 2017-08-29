@@ -1,18 +1,17 @@
 export interface Scenario {
   problem: string;
-  solution: string;
   image: string;
-  alt_text: string;
+  img_alt_text: string;
   ideas: Idea[];
 }
 
 interface Idea {
-  body: string;
+  text: string;
   examples: Example[];
 }
 
 interface Example {
-  app: string;
+  name: string;
   url: string;
 }
 
