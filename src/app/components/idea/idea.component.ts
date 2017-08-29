@@ -27,7 +27,7 @@ export class IdeaComponent implements OnInit {
 
   resetExample() {
     if (this.watchChange) {
-      //this.examples = [];
+      this.examples = [];
     }
     this.watchChange = false;
   }
@@ -36,7 +36,6 @@ export class IdeaComponent implements OnInit {
     this.solution = solution;
     this.watchChange = true;
     this.examples = examples;
-    console.log("addSolution Triggered");
   }
 
   mailTo() {

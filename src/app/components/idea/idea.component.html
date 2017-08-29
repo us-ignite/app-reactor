@@ -7,12 +7,12 @@
       <span [hidden]="solution">...</span>
     </p>
     <input type="text" placeholder="Type your idea or select one below"
-           [(ngModel)]="solution" (onChange)="resetExample()">
-    <div class="row fa-border">
-        <div class="half-column alig-left fa-border">
+           [(ngModel)]="solution" (input)="resetExample()">
+    <div class="row">
+        <div class="half-column alig-left">
           <a (click)="toggleShowIdeas()"><i class="icon fa-lightbulb-o small"></i> ideas</a>
         </div>
-        <div class="half-column align-right" [hidden]="solution">
+        <div class="half-column align-right" [hidden]="!solution">
           <a (click)="mailTo()">email this <i class="icon fa-envelope small"></i></a>
         </div>
     </div>
@@ -27,10 +27,10 @@
       </ul>
     </div>
 
-    <div class="align-left" [hidden]="examples">
+    <div class="align-left" [hidden]="!watchChange">
       <strong>Example:</strong>
-      <a href="{{ example.url }}" target="_blank" *ngFor="let example of examples">
-        {{ example.name }}
+      <a href="" target="_blank" *ngFor="let ex of examples">
+        {{ ex.name }}
       </a>
     </div>
   </div>
