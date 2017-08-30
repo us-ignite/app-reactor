@@ -35,7 +35,7 @@ export class DataService {
             examples: [
               {
                 name: 'FitNet',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/fitnet/'
               }
             ]
           },
@@ -44,56 +44,42 @@ export class DataService {
             examples: [
               {
                 name: 'PlanIT Impact',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/PlanIT-Impact/'
               }
             ]
           },
           {
             text: 'interactively view the similar sections of a big data set (or larger)',
-            examples: [
-              {
-                name: 'Pollution Viewer',
-                url: ''
-              }
-            ]
+            examples: []
           },
           {
-            text: 'have a natural conversation or distributed meeting as if you were in the same space ',
+            text: 'have a natural conversation or distributed meeting as if you were together',
             examples: [
               {
                 name: 'UltraGrid',
-                url: ''
+                url: 'http://www.ultragrid.cz/'
               },
               {
                 name: 'SightDeck',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/cmh-sightdeck/'
               }
             ]
           },
           {
-            text: 'teach or learn in a virtual environment',
-            examples: [
-              {
-                name: 'SolarVR Education',
-                url: ''
-              },
-              {
-                name: 'VR Medical Campus',
-                url: ''
-              }
-            ]
+            text: 'teach and learn in a virtual environment',
+            examples: []
           },
           {
             text: 'annotate 360 degree video',
             examples: [
               {
                 name: 'PanoVR',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/panovr/'
               }
             ]
           },
           {
-            text: 'adjust city budget or planning documents interactively and visualize the results of their changes',
+            text: 'adjust city planning data interactively and visualize the results of their changes',
             examples: [
               {
                 name: 'Austin Budget Party',
@@ -106,7 +92,7 @@ export class DataService {
             examples: [
               {
                 name: 'Gigabots',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/gigabots/'
               }
             ]
           }
