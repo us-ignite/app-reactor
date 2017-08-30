@@ -105,15 +105,10 @@ export class DataService {
         ideas: [
           {
             text: 'VR headsets for experiential education',
-            examples: [
-              {
-                name: 'SolarVR',
-                url: ''
-              }
-            ]
+            examples: []
           },
           {
-            text: 'domestic robots swarms',
+            text: 'domestic robot swarms for interactive education or home monitoring',
             examples: []
           },
           {
@@ -121,67 +116,53 @@ export class DataService {
             examples: [
               {
                 name: 'Elder-Care as a Service',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/in-home-health-alert/'
               }
             ]
           },
           {
-            text: '3D modeling systems and fabrication labs',
-            examples: [
-              {
-                name: 'Virtual Fab-Lab',
-                url: ''
-              }
-            ]
+            text: '3D modeling systems to fabrication facilities',
+            examples: []
           },
           {
             text: 'shoppers to recommendation engines provide feedback in real-time at point of purchase',
-            examples: [
-              {
-                name: 'Electronic Double Up Foodbucks',
-                url: ''
-              }
-            ]
+            examples: []
           }
         ]
       },
       { // three
         problem: 'Use big-data from hubs, archives or field devices for better decision making or education by',
         image: 'assets/images/BP2_3761.jpg',
-        img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
+        img_alt_text: 'Presentation by the Compute for Cancer team',
         ideas: [
           {
             text: 'merging and visualizing civic and engineering data to plan for increased energy efficiency',
             examples: [
               {
                 name: 'PlanIT Impact',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/PlanIT-Impact/'
               }
             ]
           },
           {
-            text: 'visualizing meteorological data with real time pollution sensors',
+            text: 'merging and visualizing meteorological data with real time pollution sensors',
             examples: [
               {
                 name: 'LEaRN',
-                url: ''
-              },
-              {
-                name: 'Pollution Vizualizer',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/lafayette-engagement-and-research-network-learn/'
               },
               {
                 name: 'GASP',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/GeusuJhSDth9GSXeZN7sM8/'
               }
             ]
           },
           {
-            text: 'modeling city data in a collaborative AR or VR environment',
+            text: 'modeling city data in a collaborative augmented reality environment.',
             examples: []
           },
           {
-            text: 'retraining machine learning algorithms training sets to form real-time recommendations',
+            text: 'retraining machine learning algorithms to form dynamic AI systems',
             examples: []
           },
           {
@@ -190,7 +171,12 @@ export class DataService {
           },
           {
             text: 'detecting floods in real-time and advise area residents to seek safety or of unsafe travel routes',
-            examples: []
+            examples: [
+              {
+                name: 'Resilient Warning Systems',
+                url: 'https://www.us-ignite.org/apps/zJiQHYzzoXrZJthAHwcN5F/'
+              }
+            ]
           },
           {
             text: 'analyze drone footage to help find a missing person or monitor infrastructure',
@@ -199,16 +185,16 @@ export class DataService {
         ]
       },
       { // four
-        problem: 'Provide unprecedented levels of detail through the use of streaming 4k Video to',
+        problem: 'Provide unprecedented levels of detail through the use of low-latency streaming 4k Video to',
         image: 'assets/images/BP2_3741.jpg',
-        img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
+        img_alt_text: 'Demonstration of real-time remote solar VR education',
         ideas: [
           {
             text: 'provide high quality real-time microscopy to classrooms',
             examples: [
               {
                 name: '4K Microscope',
-                url: ''
+                url: 'https://www.us-ignite.org/apps/yfkBqZSHjDYJmE35hSzgDg/'
               }
             ]
           },
@@ -218,10 +204,15 @@ export class DataService {
           },
           {
             text: 'stream interactive 360 degree video for collaborative analysis',
-            examples: []
+            examples: [
+              {
+                name: 'PanoVR',
+                url: 'https://www.us-ignite.org/apps/panovr/'
+              }
+            ]
           },
           {
-            text: 'connect mental health professionals with patience remotely at high frame rate',
+            text: 'connect mental health professionals with patient remotely at high frame rate',
             examples: []
           },
           {
@@ -233,14 +224,14 @@ export class DataService {
       { // five
         problem: 'Enable real-time interactive control of',
         image: 'assets/images/BP1_0943.jpg',
-        img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
+        img_alt_text: 'A small programmable robot',
         ideas: [
           {
             text: 'robots that enable seamless interaction with the environment',
             examples: []
           },
           {
-            text: 'manufacturing arrays to enable high percision professional crafting remotely',
+            text: 'connect mental health professionals with patient remotely at high frame rate',
             examples: []
           },
           {
@@ -260,24 +251,23 @@ export class DataService {
       { // six
         problem: 'Enable unprecedented levels of security or enable direct interaction by',
         image: 'assets/images/BP1_0723.jpg',
-        img_alt_text: 'Two users wearing hololens to examine a brain diagram together in real time',
+        img_alt_text: 'An array of inter-connected IoT devices',
         ideas: [
           {
-            text: 'perform music',
+            text: 'building a Software Defined Network that isolates IoT arrays from the public internet',
+            examples: []
+          },
+          {
+            text: 'provide direct connections between area compute clusters to build a distributed super-computer',
+            examples: []
+          },
+          {
+            text: 'isolating critical infrastructure like public safety networks or power grids to allow systems to only interact internally',
             examples: [
               {
-                name: 'building a Software Defined Network that isolates IoT arrays from the public internet',
-                url: ''
-              },
-              {
-                name: 'provide direct connections between area compute clusters to build a distributed super-computer',
-                url: ''
-              },
-              {
-                name: 'isolating critical infrastructure like public safety networks or power grids to allow systems to only interact internally',
-                url: ''
-              },
-
+                name: 'Secure-WAMS',
+                url: 'https://www.us-ignite.org/apps/secure-wams/'
+              }
             ]
           }
         ]
