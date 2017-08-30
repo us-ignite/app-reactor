@@ -19,7 +19,7 @@
     </div>
 
     <!-- based on example at https://css-tricks.com/snippets/jquery/styled-popup-menu/ -->
-    <div class="size" (click)="toggleShowIdeas()" (mouseleave)="toggleShowIdeas()" [hidden]="showIdeas">
+    <div class="size" (click)="toggleShowIdeas()" (mouseleave)="toggleShowIdeas()" *ngIf="showIdeas">
       <ul class="list">
         <li *ngFor="let idea of scenario.ideas" (click)="addSolution(idea.text, idea.examples)">
           <a>{{ idea.text }}</a>

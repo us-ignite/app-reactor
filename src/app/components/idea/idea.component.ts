@@ -18,7 +18,7 @@ export class IdeaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.showIdeas = true;
+    this.showIdeas = false;
     this.showExamples = false;
     this.examples = [];
   }
