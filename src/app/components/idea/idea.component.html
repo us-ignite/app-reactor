@@ -30,9 +30,9 @@
 
     <div class="align-left" [hidden]="!showExamples">
       <strong>Similar:</strong>
-      <span *ngFor="let ex of examples; let isLast=last">
-      <a href="ex.url" target="_blank" >
-        {{ ex.name }}
+      <span *ngFor="let example of examples; let isLast=last">
+      <a href="{{ example.url }}" target="_blank" >
+        {{ example.name }}
       </a>{{isLast? '' : ', '}}</span>
     </div>
   </div>
