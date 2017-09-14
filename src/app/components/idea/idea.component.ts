@@ -1,10 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Scenario, Idea, Example } from '../../models/scenario';
+import { trigger, state, style, transition, animate, group } from '@angular/animations';
 
 @Component({
   selector: 'app-idea',
   templateUrl: './idea.component.html',
-  styleUrls: ['./idea.component.scss']
+  styleUrls: ['./idea.component.scss'],
+  animations: [
+    trigger('growShrink', [
+      state('grow', style({
+        transform: 'scale(1)'
+      })),
+      state('shrink', style({
+        transform: 'scale(0)'
+      })),
+      transition('shrink => grow', animate('1000ms ease-in'))
+    ])
+  ]
 })
 export class IdeaComponent implements OnInit {
   @Input('scenario') scenario: Scenario;
@@ -14,6 +26,7 @@ export class IdeaComponent implements OnInit {
   examples: Example[];
   showExamples: boolean;
   mailTo: string;
+  growState = 'shrink';
 
   constructor() { }
 
@@ -25,6 +38,7 @@ export class IdeaComponent implements OnInit {
 
   toggleShowIdeas() {
     this.showIdeas = !this.showIdeas;
+    this.animateGrow();
   }
 
   resetExample() {
@@ -49,5 +63,10 @@ export class IdeaComponent implements OnInit {
     linkText.push('cc=' + encodeURI('scott.turnbull@us-ignite.org'));
     linkText.push('body=' +  encodeURI('You created the following at the US Ignite Gig App Generator\n\n' + this.scenario.problem + ' ' + this.solution + '.'));
     this.mailTo = linkText.join('&');
+  }
+
+  /* grossly hacky but short on time */
+  animateGrow() {
+    this.growState = (this.growState === 'shrink' ? 'grow' : 'shrink');
   }
 }

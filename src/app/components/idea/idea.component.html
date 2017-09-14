@@ -11,9 +11,9 @@
            [(ngModel)]="solution" (input)="resetExample()">
     <div class="row">
         <div class="half-column align-left">
-          <a (click)="toggleShowIdeas()" class="icon"><i class="icon fa-lightbulb-o small"></i> ideas</a>
+          <a (click)="toggleShowIdeas()" class="icon"><i class="icon fa-lightbulb-o small"></i> example ideas</a>
         </div>
-        <div class="half-column align-right" [hidden]="!solution">
+        <div class="half-column align-right" [@fadeInOut] [hidden]="!solution">
           <a (click)="setMailTo()" href="{{ mailTo }}" class="icon">email this <i class="icon fa-envelope small"></i></a>
         </div>
     </div>
@@ -25,6 +25,7 @@
           <a>{{ idea.text }}</a>
           <!-- template?  send idea.examples each as link? -->
         </li>
+        <li class="info"><em>Do any of these trigger some new ideas?  Type in your own and email it out!</em></li>
       </ul>
     </div>
 
